@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: thanak81-apideveloper-deployment
+  labels:
+    app: thanak81-apideveloper
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: thanak81-apideveloper
+  template:
+    metadata:
+      labels:
+        app: thanak81-apideveloper
+    spec:
+      containers:
+        - name: thanak81-apideveloper-container
+          image: pipejet/thanak81-apideveloper:0
+          ports:
+            - containerPort: 8080
