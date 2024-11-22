@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: thanak81-apideveloper-container
-          image: pipejet/thanak81-apideveloper:5
+          image: pipejet/thanak81-apideveloper:6
           ports:
             - containerPort: 8080
